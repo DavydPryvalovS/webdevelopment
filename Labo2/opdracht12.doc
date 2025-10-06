@@ -1,0 +1,26 @@
+﻿Eerste deel.
+
+1)Chrome Developer Tools geopend via F12 → tabblad Application.
+2)Onder Local Storage en Cookies zien we welke gegevens worden bewaard.
+3)Vervolgens de taal/regio onderaan de pagina gewijzigd(bij me stond Rus).
+4)Opnieuw gecontroleerd welke data in cookies is veranderd.
+Waarnemingen:
+In de Cookies worden meerdere domeinen gebruikt, o.a. www.microsoft.com
+, login.microsoftonline.com, microsoft.com, enz.
+Er verschijnen cookies zoals:
+MUID – unieke gebruikers-ID voor tracking over Microsoft-domeinen.
+MSCC – cookie consent-instellingen.
+CC of locale – gekozen regio/taalinstelling (bijv. nl-nl of fr-be).
+ANON, SRCHD, SRCHUID – zoek- of sessiegegevens.
+In Local Storage soms sleutels zoals preferredLocale of ClientId met taal- of voorkeurinformatie.
+Conclusie:
+De gekozen taal en regio worden voornamelijk bewaard in een cookie (bijv. CC, MSCC of locale) onder het domein www.microsoft.com
+. Andere cookies houden sessie- en trackinginformatie bij.
+
+Tweede deel
+In Local Storage verschijnt een sleutel zoals:
+compareList, lgCompare of productCompare – bevat een JSON-lijst met ID’s van de geselecteerde toestellen (bijv. ["OLED55C3","QNED866"]).
+
+Cookies bevatten algemene trackingdata en sessie-informatie (zoals LGSESSIONID, JSESSIONID, OptanonConsent), maar niet de productselectie zelf.
+
+Soms wordt ook de laatst bezochte categorie of filters opgeslagen (recentCategory, filterState).
