@@ -1,0 +1,20 @@
+.icon-link {
+    text-decoration: none;
+    color: blue;
+    font-weight: 500;
+    position: relative;
+    padding-left: 20px;
+}
+
+.icon-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-image: url('img/chain.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
