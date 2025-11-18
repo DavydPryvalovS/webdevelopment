@@ -1,0 +1,35 @@
+table {
+    border-collapse: collapse;
+    width: 300px;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+}
+
+.month {
+    background-color: rgb(170,170,200);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.day-header {
+    background-color: rgb(35,37,70);
+    color: rgb(200,190,240);
+}
+
+.other-month {
+    color: gray;
+}
+
+tr td:first-child,
+tr td:last-child {
+    background-color: rgb(255,220,220);
+}
+
+.holiday {
+    background-color: rgb(250,120,120);
+}

@@ -1,0 +1,32 @@
+.vriendentabel {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.vriendentabel th, .vriendentabel td {
+    border: 1px solid #004466;
+    padding: 10px;
+    text-align: left;
+}
+
+.vriendentabel th {
+    background-color: #004466;
+    color: white;
+}
+
+.vriendentabel tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.vriendentabel tr:hover {
+    background-color: #e0f0ff;
+}
+
+.onbekend {
+    background-color: red;
+}
+
+.vriendentabel tr:nth-child(even) td.onbekend {
+    background-color: red;
+}
