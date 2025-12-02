@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: white;
+}
+
+.page {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.top {
+    height: 200px;
+    background: url("../images/bgsky3.jpg") no-repeat center/cover;
+    text-align: center;
+    color: darkblue;
+    position: relative;
+}
+
+.top h1 {
+    font-size: 300%;
+    font-weight: bold;
+    font-style: italic;
+    margin: 20px 0 10px;
+}
+
+.top h2 {
+    font-size: 240%;
+    font-weight: bold;
+    margin: 0;
+}
+
+.plane {
+    position: absolute;
+    right: 250px;
+    bottom: 60px;
+}
+
+.content {
+    display: flex;
+    margin-top: 20px;
+}
+
+.news {
+    width: 25%;
+    background: #dddddd;
+    border: 1px solid #999999;
+    color: #666666;
+    padding: 0 10px 20px;
+    font-size: 90%;
+}
+
+.news h3 {
+    background: blue;
+    color: white;
+    text-align: center;
+    font-size: 120%;
+    margin: 20px 0 10px;
+    padding: 5px 0;
+}
+
+.main {
+    width: 75%;
+    margin-right: 10px;
+}
+
+.introduction {
+    background: white;
+    padding: 20px 30px;
+}
+
+.introduction .logo {
+    float: left;
+    margin: 20px 20px;
+}
+
+.blue {
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.gallery {
+    background: #999999;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 180px;
+    background: white;
+    padding: 10px;
+    border: 1px dotted #999999;
+    object-fit: cover;
+}
+
+.bottom {
+    background: #666666;
+    color: white;
+    padding: 20px 0;
+    line-height: 2em;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    text-align: center;
+}
+
+.bottom a {
+    color: white;
+    text-decoration: underline;
+}
+
+.bottom a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+
+
+.bottom ul {
+    list-style: disc;
+}
+
+.bottom ul ul {
+    list-style: circle;
+}
+
+.copyright {
+    text-align: center;
+    background: white;
+    color: black;
+    padding: 10px 0;
+}

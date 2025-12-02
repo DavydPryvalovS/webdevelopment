@@ -1,0 +1,28 @@
+main {
+    width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+article {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+    overflow: auto;
+}
+
+article img {
+    width: 150px;
+    margin: 0 10px 10px 0;
+    float: left;
+}
+
+article:nth-of-type(2) img,
+article:nth-of-type(4) img {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+h2 {
+    margin-top: 0;
+}
