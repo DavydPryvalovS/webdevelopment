@@ -1,0 +1,10 @@
+.middle{
+    background-color: grey;
+}
+.side{
+    background-color: lightgray;
+
+}
+.side, .middle {
+    background-clip: content-box;
+}
