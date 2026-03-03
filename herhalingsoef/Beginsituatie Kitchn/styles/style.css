@@ -1,0 +1,202 @@
+/** Volgende CSS gaan we ze geven **/
+.respimg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+*{
+    margin: 0;
+    font-family: Helvetica,sans-serif;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 2em;
+
+}
+
+header.div{
+    border-bottom: 1px solid #ebe8e8;
+    margin-bottom: 10px;
+    min-width: 600px
+}
+.titel{
+    color:white;
+
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    width: auto;
+    display: block;
+
+}
+
+h1.nav{
+    text-transform: uppercase;
+    font-size: 2em;
+    color:black;
+    border-bottom: 2px solid black;
+    padding: 1em;
+    margin: 1em;
+}
+
+h2{
+    font-size: 1.5em;
+    margin: 1em;
+}
+
+
+
+    nav.menu{
+        padding: 10px 0;
+        min-width: 600px;
+    }
+    nav.menu ul{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(7, 1fr);
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav.menu li{
+        text-align: center;
+        margin: 0 10px;
+    }
+    nav.menu li a{
+        position: relative;
+        padding:10px 15px;
+        color:#5b4746;
+        font-size: 13px;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-right:1px solid #ebe8e8;
+        display: block;
+    }
+    nav.menu li:last-child a{
+        border-right: none;
+    }
+    nav.menu li a:hover{
+        border-bottom:2px solid #fff100;
+        content:"";
+        margin:-1px;
+    }
+
+.headerImage{
+        background-image: url("../images/headerimage.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* title */
+        font-size: 40px;
+        color:white;
+        text-shadow: 2px 2px 0 #8D99AE;
+}
+.receiptTitel{
+        margin-top: 50px;
+
+
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+section{
+    margin: 50px auto;
+    width: 600px;
+}
+article{
+    margin-right: 1.5em;
+    padding-top: 1em;
+    border-top: 1px solid #ddd;
+}
+.smallTitle {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    color: #ff4d56;
+}
+.bigTitle{
+    border:none;
+    color:black;
+}
+.itemTitle{
+    color:#666;
+    line-height: 2;
+}
+.itemAuthor{
+    padding-right: 10px;
+
+    border-right: 1px #ebe8e8 solid;
+    font-style:italic;
+
+}
+.itemTitle{
+    color:#666;
+    padding-left: 10px;
+}
+.author{
+    display: flex;
+    justify-content: left;
+}
+.recommended-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+}
+.recomendText{
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+footer{
+    display:flex;
+    justify-content: center;
+}
+#left{
+
+
+}
+
+
+@media (min-width: 770px) {
+    header {
+        min-width: 750px;
+    }
+
+    nav.menu {
+        min-width: 750px;
+    }
+    section{
+        width: 750px;
+    }
+}
+@media (min-width: 800px) {
+    .headerImage{
+        font-size: 5em;
+    }
+
+
+}
+@media (min-width: 1000px) {
+    header{
+        min-width: 980px;
+    }
+    nav.menu{
+        min-width: 980px;
+    }
+    section{
+        width: 980px;
+    }
+}
