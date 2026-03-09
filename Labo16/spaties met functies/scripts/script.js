@@ -1,5 +1,7 @@
 const maakMetSpaties = (inputText) => {
   let result = "";
+
+
   for (let i = 0; i < inputText.length; i++) {
     if (inputText[i] !== " ") {
       result += inputText[i];

@@ -1,9 +1,10 @@
-const tekst = "De man van An geeft geen hand aan ambetante verwanten";
-const zoek = "an";
-
+const tekst = "De man van An geeft geen hand aan ambetante verwanten".toLowerCase();
+const zoek = "an".toLowerCase();
 
 let countIndexOf = 0;
 let pos = 0;
+//pos ipv index omdat ik dat zo wil hehehe
+
 while ((pos = tekst.indexOf(zoek, pos)) !== -1) {
   countIndexOf++;
   pos += zoek.length;
