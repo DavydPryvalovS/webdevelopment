@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulier Validatie</title>
+</head>
+<body>
+
+<h3>Invulformulier</h3>
+
+<form id="formulier">
+  <div>
+    <label for="voornaam">Voornaam</label>
+    <input type="text" id="voornaam" maxlength="30">
+    <span id="error-voornaam"></span>
+  </div>
+
+  <div>
+    <label for="familienaam">Familienaam *</label>
+    <input type="text" id="familienaam" maxlength="50">
+    <span id="error-familienaam"></span>
+  </div>
+
+  <div>
+    <label for="geboortedatum">Geboortedatum *</label>
+    <input type="text" id="geboortedatum" placeholder="jjjj-mm-dd">
+    <span id="error-geboortedatum"></span>
+  </div>
+
+  <div>
+    <label for="email">Email *</label>
+    <input type="text" id="email">
+    <span id="error-email"></span>
+  </div>
+
+  <div>
+    <label for="aantalKinderen">Aantal kinderen</label>
+    <input type="text" id="aantalKinderen">
+    <span id="error-aantalKinderen"></span>
+  </div>
+
+  <button type="button" id="valideerBtn">Valideer</button>
+</form>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
