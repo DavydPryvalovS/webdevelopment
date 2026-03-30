@@ -1,0 +1,38 @@
+#speelveld {
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    grid-gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.kaart {
+    width: 120px;
+    height: 120px;
+    object-fit: cover; /* Zorgt dat je plaatjes mooi in het vierkant passen */
+    border: 5px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.correct {
+    border-color: green !important;
+}
+
+.wrong {
+    border-color: red !important;
+}
+
+.hidden {
+    /* Gebruik visibility zodat de kaarten op hun plek blijven staan */
+    visibility: hidden;
+}
+
+#boodschap {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 20px;
+}

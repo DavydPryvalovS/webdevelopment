@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#playField {
+    position: relative;
+    /* Afmetingen uit stap 1 van de opdracht */
+    width: 600px;
+    height: 800px;
+    border: 1px solid black;
+    overflow: hidden;
+    margin-top: 10px;
+    background-color: #f0f0f0;
+}
+
+.sprite {
+    position: absolute;
+    /* Een vaste grootte voor de sprites (global.IMAGE_SIZE) */
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    /* Verberg het object bij de start */
+    display: none;
+}
+
+/* De unselectable klasse voorkomt tekstselectie en slepen */
+.unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none; /* Voorkomt het slepen van afbeeldingen */
+}

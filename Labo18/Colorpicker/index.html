@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Colorpicker</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="controls">
+    <div class="row">
+      <label>0</label>
+      <input type="range" id="red" min="0" max="255" value="128">
+      <label>255</label>
+      <span>Red <span id="redVal">128</span></span>
+    </div>
+    <div class="row">
+      <label>0</label>
+      <input type="range" id="green" min="0" max="255" value="128">
+      <label>255</label>
+      <span>Green <span id="greenVal">128</span></span>
+    </div>
+    <div class="row">
+      <label>0</label>
+      <input type="range" id="blue" min="0" max="255" value="128">
+      <label>255</label>
+      <span>Blue <span id="blueVal">128</span></span>
+    </div>
+  </div>
+
+  <div id="colorDisplay"></div>
+  <button id="saveBtn">Save</button>
+</div>
+
+<div id="savedColors"></div>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
